@@ -12,6 +12,16 @@ Aquest projecte implementa un sistema per predir la similitud semàntica entre p
 - Analitzar l’impacte de la dimensionalitat i del fet que els embeddings siguin entrenables o no.
 - Experimentar amb classificació de textos sobre el corpus TECLA.
 
+## Requisits d’Embeddings
+
+Per executar correctament els experiments amb embeddings preentrenats de FastText, **cal descarregar i tenir accessibles aquests arxius**:
+
+- `cc.ca.300.vec`: fitxer original de FastText en format `.vec` (vectors en català).
+- `model_300d.kv`: versió optimitzada en format Gensim KeyedVectors.
+
+**Important**: assegura’t que aquests fitxers estiguin descomprimits i ubicats al directori de treball del projecte o a la ruta especificada al codi.
+
+
 ## Conjunt de Dades
 
 Els experiments s’han basat principalment en el corpus **STS en català** del projecte AINA, que conté parelles de frases amb puntuacions de similitud. Addicionalment, per la part de classificació, s’ha utilitzat el corpus **TECLA**, que conté oracions etiquetades en diverses categories temàtiques.
